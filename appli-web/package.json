@@ -1,0 +1,14 @@
+{
+  "name": "gestion-app",
+  "version": "1.0.0",
+  "description": "Exemple d'application de gestion avec Node.js, Express et MySQL (RDS).",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "dotenv": "^16.4.5"
+  }
+}
