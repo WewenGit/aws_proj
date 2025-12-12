@@ -1,3 +1,7 @@
+# Étapes à respecter pour l'installation de l'infrastructure sur AWS
+
+### Premièrement sur Cloud9
+
 wget https://releases.hashicorp.com/terraform/1.13.4/terraform_1.13.4_linux_amd64.zip
 unzip terraform_1.13.4_linux_amd64.zip
 sudo mv terraform /usr/local/bin
@@ -5,7 +9,7 @@ terraform init
 terraform apply
 "Dire yes"
 
-Se connecter sur l'EC2 puis entrer :
+### Se connecter sur l'EC2 VCP-1 puis entrer :
 
 sudo yum update -y
 sudo yum install -y docker
