@@ -14,7 +14,7 @@ terraform apply
 
 #Entrez yes si demandé
 
-### Se connecter sur l'EC2 VCP-1 puis entrer :
+### Se connecter sur l'EC2 vcp1-ec2 puis entrer :
 
 
 ```
