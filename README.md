@@ -43,11 +43,6 @@ cd aws_proj/appli-web
 sudo docker build -t gestion-app .
 sudo docker run -d \
 -p 8080:8080 \
--e PORT=8080 \
--e DB_HOST=vpc1-rds.c3wgqeo2m8hp.us-east-1.rds.amazonaws.com\
--e DB_USER=admin \
--e DB_PASSWORD=projcloud123 \
--e DB_NAME=gestion_app \
 --name gestion-app \
 gestion-app
 ```
