@@ -25,19 +25,23 @@ sudo service docker start
 sudo dnf update -y
 sudo dnf install mariadb105-server
 ```
+#Entrer y si demandé
 
+
+### Votre instance RDS est générée, vous pouvez récupérer son point de terminaison dans l'onglet Connectivité et sécurité de l'outil RDS d'AWS sous la forme "vpc1-rds.c3wgqeo2m8hp.us-east-1.rds.amazonaws.com"
 
 #Optionnel (pour tester la co à la base)
 ```
 mysql -h <RDS_ENDPOINT> -P 3306 -u admin -p
 ```
+Le MDP (modifiable depuis le fichier situé dans /infra/modules/vpc/main.tf) est cloudproj123
 
-#Puis
+### Puis
 ```
 git clone https://github.com/WewenGit/aws_proj.git
 cd aws_proj/appli-web
-docker build -t gestion-app .
-docker run -d \
+sudo docker build -t gestion-app .
+sudo docker run -d \
 -p 8080:8080 \
 -e PORT=8080 \
 -e DB_HOST=vpc1-rds.c3wgqeo2m8hp.us-east-1.rds.amazonaws.com\
